@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/download.png">
+
+    <!-- Custom File's Link -->
+	  <link rel="stylesheet" href="css/cart-page.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+
+	<!--BOX ICONS-->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+
+
+</head>
+
+<body>
+  <header>
+  <div class="nav container">
+    <a class="navbar-brand" href="#">
+        <img decoding="async" src="images/logo1.png" class="img-fluid" alt="logo" style="height: 100px;">
+    </a>
+
+
+<!--CART ICON-->
+    <a class="main-btn" href="index.html">Back Home</a>
+    <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+
+<!--CART-->
+<div class="cart">
+<h2 class="cart-title">Your Cart</h2>
+<!--CONTENT-->
+<div class="cart-content">
+  
+</div>
+<!--TOTAL-->
+<div class="total">
+  <div class="total-title">Total</div>
+  <div class="total-price">₹0</div>
+</div>
+<!--BUY BUTTON-->
+<button type="button" class="btn-buy">Buy Now</button>
+<!--Cart Close-->
+<i class="bx bx-x" id="close-cart"></i>
+</div>
+
+
+</div>
+</header>
+<!-- Navbar Ends -->
+<!-- Menu Page -->
+<section class="text-gray-600 body-font" style="padding:0px">
+  <div class="container px-5 py-24 mx-auto">
+  <div class="flex flex-wrap -mx-4 -mb-10 text-center">     
+    <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="menuimg/malvanisp.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Malvani Special </h2>
+        <p class="leading-relaxed text-base">This restaurant offers a variety of Malvani fish dishes, such as Sumari Bhaji, 
+          Bangda Kadhi,Fried Surmai, Fish Rassa,Tambda pandhra, etc</p>
+        <a href="#malvanispecial"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-5 focus:outline-none hover:bg-orange-600 rounded">Go to Menu</button></a>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="menuimg/kokanisp.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Kokan Special</h2>
+        <p class="leading-relaxed text-base">This restaurant offers a variety of Kokani fish curry, pomphlet fry, Solkhadi, variety of fish dishes, etc.</p>
+        <a href="#kokanispecial"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-5 focus:outline-none hover:bg-orange-600 rounded">Go to Menu</button></a>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="menuimg/thali.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Thali feast</h2>
+        <p class="leading-relaxed text-base">This restaurant offers a variety of Veg Thali, Ravana Thali, Non-veg Thali, Bangda Thali, chicken Thali, Egg Thali etc.</p>
+        <a href="#thalifeast"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-5 focus:outline-none hover:bg-orange-600 rounded">Go to Menu</button></a>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="menuimg/chinese.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Chinese Menu</h2>
+        <p class="leading-relaxed text-base">This restaurant offers a variety of pithala bhakri, malvani kalavatana usal, Anda masal, anda curry, 
+          crab curry rice etc.</p>
+        <a href="#chinese"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-5 focus:outline-none hover:bg-orange-600 rounded">Go to Menu</button></a>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="menuimg/kokanim.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Konkani morning</h2>
+        <p class="leading-relaxed text-base">This restaurant offers a variety of Amboli, Anda curry Pav, Egg bhurji Pav, Malwani Poha, Kaal Watana Usal Pav, etc.</p>
+        <a href="#kokanimorning"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-5 focus:outline-none hover:bg-orange-600 rounded">Go to Menu</button></a>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="menuimg/veg.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Vegan Dishes</h2>
+        <p class="leading-relaxed text-base">This restaurant offers a variety of veg Kolhapuri,panner masala,veg thikka,channa masala,veg biryani, etc.</p>
+        <a href="#vegan"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-5 focus:outline-none hover:bg-orange-600 rounded">Go to Menu</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Menu Page exits -->
+
+<!-- Malvani Special -->
+<section id="malvanispecial" class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <h1 style="position: center; font-size: 50px; font-family: 'Times New Roman', Times, serif;">Malvani Special</h1><br>
+    <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/malvani special\bangdacurry.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">MALVANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Bangda curry</h2>
+          <p class="mt-1">Rs.220</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/malvani special\friedsurmai.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">MALVANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Fried Surmai</h2>
+          <p class="mt-1">Rs.260</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/malvani special\chickensukka.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">MALVANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Chicken Sukka</h2>
+          <p class="mt-1">Rs.270</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/malvani special\muttonchop.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">MALVANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Mutton Chop Dry</h2>
+          <p class="mt-1">Rs.280</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/malvani special\kombdivade.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">MALVANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Kombdi Wade</h2>
+          <p class="mt-1">Rs.370</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/malvani special\stuffbangda.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">MALVANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Stuffes Bangda Fry</h2>
+          <p class="mt-1">Rs.210</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/malvani special\kolimbirassa.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">MALVANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Kolimbi Rassa</h2>
+          <p class="mt-1">Rs.200</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/malvani special\fishfry.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">MALVANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Fish Rava Fry</h2>
+          <p class="mt-1">Rs. 195</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Malvani Special exits -->
+
+<!-- Kokani Special -->
+<section id="kokanispecial" class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <h1 style="position: center; font-size: 50px; font-family: 'Times New Roman', Times, serif;">Kokani Special</h1><br>
+    <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kspecial\solkhadi.jpeg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Sol kadi</h2>
+          <p class="mt-1">Rs.25</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kspecial\fishcurry.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Kokani Fish Curry</h2>
+          <p class="mt-1">Rs. 215</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kspecial\fry.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Pomphlet Fry</h2>
+          <p class="mt-1">Rs.150</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kspecial\patole.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Haldi Patole</h2>
+          <p class="mt-1">Rs.120</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kspecial\dalkheer.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Channa Dal Kheer</h2>
+          <p class="mt-1">Rs.60</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kspecial\phenori.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Phenori</h2>
+          <p class="mt-1">Rs.50</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kspecial\malpua.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Malpoe</h2>
+          <p class="mt-1">Rs. 85</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kspecial\sundal.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI SPECIAL</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Sundal</h2>
+          <p class="mt-1">Rs.65</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Kokani SPecial exits -->
+
+<!-- Thali feast -->
+<section id="thalifeast" class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <h1 style="position: center; font-size: 50px; font-family: 'Times New Roman', Times, serif;">Thali Feast</h1><br>
+    <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/thali\vegthali.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">THALI FEAST</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Veg Thali</h2>
+          <p class="mt-1">Rs.180</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/thali\crabthali.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">THALI FEAST</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Crab Thali</h2>
+          <p class="mt-1">Rs.290</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/thali\muttonthali.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">THALI FEAST</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Mutton Thali</h2>
+          <p class="mt-1">Rs.320</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/thali\chickenthali.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">THALI FEAST</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Chicken Thali</h2>
+          <p class="mt-1">Rs.290</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/thali\ravana thali.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">THALI FEAST</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Ravnana Thali</h2>
+          <p class="mt-1">Rs.350</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/thali\eggthali.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">THALI FEAST</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Anda Thali</h2>
+          <p class="mt-1">Rs.210</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/thali\bangdathali.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">THALI FEAST</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Bangda / Surmai Thali</h2>
+          <p class="mt-1">Rs.240</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/thali\upavasthali.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">THALI FEAST</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Upavas Thali</h2>
+          <p class="mt-1">Rs.150</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Thali feast exits -->
+
+<!-- Chinese Menu -->
+<section id="chinese" class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <h1 style="position: center; font-size: 50px; font-family: 'Times New Roman', Times, serif;">Chinese Menu</h1><br>
+    <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/chinese\soup.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CHINESE MENU</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Soup Special</h2>
+          <p class="mt-1">Rs.150</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/chinese\gravy.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CHINESE MENU</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Manchurian Fry / Gravy</h2>
+          <p class="mt-1">Rs.120</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/chinese\rice.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CHINESE MENU</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Triple Schezwan Rice</h2>
+          <p class="mt-1">Rs.130</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/chinese\hakkanoodles.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CHINESE MENU</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Hakka Noodles</h2>
+          <p class="mt-1">Rs.120</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/chinese\chilly.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CHINESE MENU</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Paneer Chilly</h2>
+          <p class="mt-1">Rs.145</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/chinese\mchilly.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CHINESE MENU</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Manchurian Chilly</h2>
+          <p class="mt-1">Rs.130</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/chinese\frice.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CHINESE MENU</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Fried Rice</h2>
+          <p class="mt-1">Rs.140</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/chinese\springrolls.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CHINESE MENU</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Spring rolls</h2>
+          <p class="mt-1">Rs.150</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Chinese Menu exits -->
+
+<!-- Kokani Morning -->
+<section id="kokanimorning" class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <h1 style="position: center; font-size: 50px; font-family: 'Times New Roman', Times, serif;">Kokani Morning</h1><br>
+    <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kmorning\RavaUpma.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI MORNING</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Rava Upma</h2>
+          <p class="mt-1">Rs.80</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kmorning\pooribhaji.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI MORNING</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Poori Bhaji</h2>
+          <p class="mt-1">Rs.120</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kmorning\sandhan.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI MORNING</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Sandhan</h2>
+          <p class="mt-1">Rs.95</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kmorning\dalappe.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI MORNING</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Dal Appe</h2>
+          <p class="mt-1">Rs.120</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kmorning\aluwadi.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI MORNING</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Alu Wadi</h2>
+          <p class="mt-1">Rs.100</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kmorning\poharassa.jpeg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI MORNING</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Kande Poha rasa</h2>
+          <p class="mt-1">Rs.80</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kmorning\sheera.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI MORNING</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Goda Sheera</h2>
+          <p class="mt-1">Rs.90</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/kmorning\thalipeeth.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">KOKANI MORNING</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Thalipeetha</h2>
+          <p class="mt-1">Rs.70</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Kokani Morning exits-->
+
+<!-- Vegan Dishes -->
+<section id="vegan" class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <h1 style="position: center; font-size: 50px; font-family: 'Times New Roman', Times, serif;">Vegan Dishes</h1><br>
+    <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/vegan\vegbiryani.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">VEGAN DISHES</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Veg Biryani</h2>
+          <p class="mt-1">Rs.280</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/vegan\vegkolhapuri.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">VEGAN DISHES</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Veg Kolhapuri</h2>
+          <p class="mt-1">Rs.170</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/vegan\veghandi.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">VEGAN DISHES</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Veg Handi</h2>
+          <p class="mt-1">Rs.180</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/vegan\roti.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">VEGAN DISHES</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Roti / Naan</h2>
+          <p class="mt-1">Rs.12</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/vegan\jeerarice.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">VEGAN DISHES</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Jeera Rice</h2>
+          <p class="mt-1">Rs.120</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/vegan\daltadka.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">VEGAN DISHES</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Dal Tadka</h2>
+          <p class="mt-1">Rs.150</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/vegan\dalkhichadi.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">VEGAN DISHES</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Dal Khichadi</h2>
+          <p class="mt-1">Rs.210</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="menuimg/vegan\paneer.jpg">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">VEGAN DISHES</h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Paneer special</h2>
+          <p class="mt-1">Rs.230</p>
+          <a href="#"><button class="flex mx-auto mt-6 text-white bg-orange-500 border-0 py-2 px-4 focus:outline-none hover:bg-orange-200 rounded">Order now</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Vegan Dishes exits -->
+
+</body>
+</html>

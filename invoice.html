@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/invoice.css">
+
+    <!--[if mso]>
+    <style type="text/css">
+      .f-fallback  {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  <![endif]-->
+  </head>
+  <body>
+    <span class="preheader">This is an invoice for your purchase on {{ purchase_date }}. Please submit payment by {{ due_date }}</span>
+    <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center">
+          <table class="email-content" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+            <tr>
+              <td class="email-masthead">
+                <a href="index.html" class="f-fallback email-masthead_name">
+                Kokan Katta 
+              </a>
+              </td>
+            </tr>
+            <!-- Email Body -->
+            <tr>
+              <td class="email-body" width="100%" cellpadding="0" cellspacing="0">
+                <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation">
+                  <!-- Body content -->
+                  <tr>
+                    <td class="content-cell">
+                      <div class="f-fallback">
+                        <h1>Hi {{name}},</h1>
+                        <p>This is an invoice for your recent purchase.</p>
+                        <table class="attributes" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                          <tr>
+                            <td class="attributes_content">
+                              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                  <td class="attributes_item">
+                                    <span class="f-fallback">
+              <strong>Amount Due:</strong> {{total}}
+            </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="attributes_item">
+                                    <span class="f-fallback">
+              <strong>Order ID:</strong> {{due_date}}
+            </span>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- Action -->
+                        
+                        <table class="purchase" width="100%" cellpadding="0" cellspacing="0">
+                         
+                          <tr>
+                            <td colspan="2">
+                              <table class="purchase_content" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <th class="purchase_heading" align="left">
+                                    <p class="f-fallback">Description</p>
+                                  </th>
+                                  <th class="purchase_heading" align="right">
+                                    <p class="f-fallback">Amount</p>
+                                  </th>
+                                </tr>
+                                
+                                <tr>
+                                  <td width="80%" class="purchase_item"><span class="f-fallback">{{description}}</span></td>
+                                  <td class="align-right" width="20%" class="purchase_item"><span class="f-fallback">{{amount}}</span></td>
+                                </tr>
+                                
+                                <tr>
+                                  <td width="80%" class="purchase_footer" valign="middle">
+                                    <p class="f-fallback purchase_total purchase_total--label">Total</p>
+                                  </td>
+                                  <td width="20%" class="purchase_footer" valign="middle">
+                                    <p class="f-fallback purchase_total">{{total}}</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <p>If you have any questions about this invoice, simply reply to this email or reach out to our <a href="{{support_url}}">support team</a> for help.</p>
+                        <p>Cheers,
+                          <br>The [Product Name] Team</p>
+                        <!-- Sub copy -->
+                        
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
