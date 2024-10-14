@@ -5,12 +5,6 @@
         font-size: 40px;
         line-height: 48px;
     }
-
-    p {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
     /* Menu */
     .menu_wrapper .row {
         padding-top: 70px;
@@ -23,17 +17,4 @@
         font-size: 30px;
     }
 
-    /* offers */
-    .offers_wrapper .card .offer-text {
-        width: 65%;
-    }
-
-    /* review */
-    .carousel-caption {
-        bottom: 0;
-    }
-
-    .review_wrapper .carousel-item {
-        min-height: 460px;
-    }
-}
+    
